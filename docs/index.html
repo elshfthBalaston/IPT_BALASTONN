@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+    href="https://elisha.css"
+        
+        rel="stylesheet"
+    />
+    <link rel="stylesheet" href="For.css" />
+    <title>Home</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #f0f4f8, #d9e4ef);
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        nav {
+            background: #2c3e50;
+            padding: 15px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            transition: background 0.3s ease;
+        }
+
+        .nav__content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo a {
+            font-size: 26px;
+            color: #ecf0f1;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            color: #ecf0f1;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #3498db;
+        }
+
+        .section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            padding: 60px 20px;
+            animation: fadeIn 1s ease-out;
+        }
+
+        .section__container {
+            max-width: 1200px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin: auto;
+            animation: slideIn 1.5s ease-out;
+        }
+
+        .content {
+            flex: 1;
+            padding: 20px;
+            max-width: 600px;
+            animation: fadeInLeft 1s ease-out;
+        }
+
+        .subtitle {
+            font-size: 18px;
+            color: #3498db;
+            opacity: 0;
+            animation: fadeIn 1s ease-out forwards;
+            animation-delay: 0.3s;
+        }
+
+        .title {
+            font-size: 36px;
+            margin: 10px 0;
+            line-height: 1.2;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .title span {
+            color: #3498db;
+        }
+
+        .description {
+            margin: 20px 0;
+            line-height: 1.5;
+            font-size: 18px;
+            opacity: 0;
+            animation: fadeIn 1s ease-out forwards;
+            animation-delay: 0.5s;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 20px 0;
+            opacity: 0;
+            animation: fadeIn 1s ease-out forwards;
+            animation-delay: 0.7s;
+        }
+
+        .social-icons a {
+            font-size: 40px;
+            color: #3498db;
+            transition: color 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: #2c3e50;
+        }
+
+        .action__btns {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            opacity: 0;
+            animation: fadeIn 1s ease-out forwards;
+            animation-delay: 0.9s;
+        }
+
+        .action__btns button {
+            padding: 12px 30px;
+            border: none;
+            border-radius: 5px;
+            background: #3498db;
+            color: white;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.2s ease-in-out;
+        }
+
+        .action__btns button:hover {
+            background: #2980b9;
+            transform: translateY(-3px);
+        }
+
+        .image {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            animation: fadeInRight 1s ease-out;
+        }
+
+        .image img {
+            width: 330px;
+            height: 350px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #ecf0f1;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInLeft {
+            0% {
+                opacity: 0;
+                transform: translateX(-30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeInRight {
+            0% {
+                opacity: 0;
+                transform: translateX(30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideIn {
+            0% {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav__content">
+            <div class="logo"><a href="index.html">EFDB</a></div>
+                <i class="ri-menu-line"></i>
+            </label>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Resume.html">Resume</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Section for Introduction -->
+    <section class="section">
+        <div class="section__container">
+            <div class="content">
+                <p class="subtitle">HELLO</p>
+                <h1 class="title">
+                    I'm <span>Elisha FAITH<br />an</span> IT Student
+                </h1>
+                <p class="description">
+                    Welcome to my portfolio! <br> Feel free to browse through the various sections.
+                </p>
+                <p>Thank you for visiting!</p>
+
+                <!-- Social Media Icons -->
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/elisha.faith.balaston.3?mibextid=ZbWKwL" target="_blank"><i class="ri-facebook-fill"></i></a>
+                    <a href="https://www.instagram.com/elsh.fth/profilecard/?igsh=d2I5dWd6aTk2MW8z&fbclid=IwY2xjawGxFPNleHRuA2FlbQIxMAABHaqB9XgL0k0vbRv5DXkiBL2bAWvWHzME1Sfmg0wy9T3bZPD-GNi9GSR_xA_aem_Xql3YBrohByP4wKLeaOOKg" target="_blank"><i class="ri-instagram-fill"></i></a>
+                    <a href="https://www.tiktok.com/@elshfth?_t=8rgR0fs8l7Q&_r=1&fbclid=IwY2xjawGxFUVleHRuA2FlbQIxMAABHVfOPpf471X-H8t4fHh0jaCmwKMqqE3FO6W-Bdjd0JMPX2EiHIOBhHs_3Q_aem_r8jtzX-j2RKMAIHGCIh8vw" target="_blank"><i class="ri-tiktok-fill"></i></a>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="action__btns">
+                    <button class="btn" onclick="window.location.href='About.html';">ABOUT</button>
+                    <button class="btn" onclick="window.location.href='Resume.html';">RESUME</button>
+                </div>
+                
+            </div>
+            <div class="image">
+                <img src="elisha.jpg" alt="profile" />
+            </div>
+        </div>
+    </section>
+</body>
+</html>

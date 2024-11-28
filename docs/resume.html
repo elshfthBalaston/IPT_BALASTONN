@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume</title>
+    <link href="https://elisha.css" rel="stylesheet" />
+    <link rel="stylesheet" href="For.css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f9f9f9;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        /* Navigation */
+        nav {
+            background: #2c3e50;
+            padding: 15px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            transition: background 0.3s ease;
+        }
+
+        .nav__content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo a {
+            font-size: 24px;
+            color: #ecf0f1;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            color: #ecf0f1;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #3498db;
+        }
+
+        /* Resume Section */
+        .resume-section {
+            padding: 60px 20px;
+            max-width: 900px;
+            margin: 0 auto;
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        .resume-section h1 {
+            font-size: 32px;
+            color: #333;
+            margin-bottom: 30px;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .resume-section h2 {
+            font-size: 24px;
+            color: #3498db;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        .resume-section p {
+            font-size: 18px;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        .resume-list {
+            list-style: none;
+            padding-left: 0;
+            font-size: 18px;
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+
+        .resume-list li {
+            margin-bottom: 10px;
+        }
+
+        .column {
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+
+        .column div {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav__content">
+            <div class="logo"><a href="index.html">EFDB</a></div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Resume.html">Resume</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Resume Section -->
+    <section class="resume-section">
+        <h1>ELISHA FAITH D. BALASTON</h1>
+
+        <!-- Contact Information -->
+        <div>
+            <h2>Contact Information</h2>
+            <ul class="resume-list">
+                <li><strong>Phone:</strong> 099635487</li>
+                <li><strong>Email:</strong> elisha@gmail.com</li>
+                <li><strong>Address:</strong> Arkong Bato, Malabon City</li>
+            </ul>
+        </div>
+
+         <!-- Personal Information Section -->
+         <div>
+            <h2>Personal Information</h2>
+            <ul class="resume-list">
+                <li><strong>Civil Status:</strong> Single</li>
+                <li><strong>Nationality:</strong> Filipino</li>
+                <li><strong>Religion:</strong> Church of God</li>
+                <li><strong>Sex:</strong> Female</li>
+                <li><strong>Date of Birth:</strong> June 1, 2003</li>
+                <li><strong>Age:</strong> 21</li>
+                <li><strong>Height:</strong> 5'3"</li>
+                <li><strong>Weight:</strong> 55 kg</li>
+                <li><strong>Birthplace:</strong> Manila</li>
+                <li><strong>Languages:</strong> Tagalog, English</li>
+            </ul>
+        </div>
+
+        <!-- Objective -->
+        <div>
+            <h2>Objective</h2>
+            <p>
+                Seeking a position where I can utilize my skills and passion for technology to contribute to a growing company and gain valuable professional experience.
+            </p>
+        </div>
+
+        <!-- Skills Section -->
+        <div>
+            <h2>Skills</h2>
+            <div class="column">
+                <div>
+                    <ul class="resume-list">
+                        <li>Interpersonal skills</li>
+                        <li>Adaptability</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="resume-list">
+                        <li>Computer Literate</li>
+                        <li>Communication </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Education Section -->
+        <div>
+            <h2>Education</h2>
+            <ul class="resume-list">
+                <li><strong>Tertiary:</strong> Bachelor of Science in Information Technology (2022-2024+) - City of Malabon University</li>
+                <li><strong>Secondary:</strong> Senior High: Panghulo National High School (2020-2022), Junior High: Panghulo National High School (2016-2020)</li>
+                <li><strong>Primary:</strong> Santulan Elementary School (2010-2016)</li>
+            </ul>
+        </div>
+
+        <!-- Achievements Section -->
+        <div>
+            <h2>Achievements</h2>
+            <ul class="resume-list">
+                <li>Dean’s Lister (2023-2024)</li>
+                <li>ROTC Graduate (SY 2022-2023)</li>
+                <li>With Honors (Grade 11 & 12, 2020-2022)</li>
+                <li>Programming (Java) NC III (SY 2021-2022)</li>
+            </ul>
+        </div>
+
+    </section>
+
+</body>
+
+</html>

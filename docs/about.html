@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me</title>
+    <link
+        href="https://elisha.css"
+
+        rel="stylesheet"
+    />
+    <link rel="stylesheet" href="For.css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f9f9f9;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        /* Navigation */
+        nav {
+            background: #2c3e50;
+            padding: 15px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            transition: background 0.3s ease;
+        }
+
+        .nav__content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo a {
+            font-size: 24px;
+            color: #ecf0f1;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            color: #ecf0f1;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #3498db;
+        }
+
+        /* About Section */
+        .section {
+            padding: 60px 20px;
+            text-align: center;
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        .section h1 {
+            font-size: 32px;
+            color: #333;
+            margin-bottom: 20px;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .section p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            color: #555;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            opacity: 0;
+            animation: fadeIn 1s ease-out forwards;
+            animation-delay: 0.3s;
+        }
+
+        /* Skills Section */
+        .skills {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 40px;
+            opacity: 0;
+            animation: fadeIn 1s ease-out forwards;
+            animation-delay: 0.6s;
+        }
+
+        .skill {
+            background: #3498db;
+            color: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            font-weight: bold;
+            flex: 1 1 30%;
+            max-width: 200px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .skill:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Footer */
+        footer {
+            background: #2c3e50;
+            color: #ecf0f1;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 40px;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav__content">
+            <div class="logo"><a href="index.html">EFDB</a></div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Resume.html">Resume</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <section class="section">
+        <h1>About Me</h1>
+        <p>
+            Elisha Faith D. Balaston is twenty one years old. She was born on June 1, 2003, in Malabon City. She currently lives in Arkong Bato, Valenzuela City. She is a student at City of Malabon University, studying for a Bachelor of Science in Information Technology (BSIT), third year. She was a Dean’s Lister in the first semester school year 2022-2023. She also graduated from ROTC in 2023 at the same university.
+        </p>
+        <p>
+            She graduated with honors in Senior High School for grades 11 and 12 from Panghulo National High School from 2020 to 2022. Since Junior High School, she has enjoyed collecting certificates and achievements. She does this to make her parents proud because of her hard work in her studies.
+        </p>
+        <p>
+            She is the second of three siblings and comes from a supportive family. Her parents help her finish her education. She wants to complete her studies for her parents’ sacrifices, believing that one day she can give them a better life.
+        </p>
+    </section>
+
+</body>
+</html>
